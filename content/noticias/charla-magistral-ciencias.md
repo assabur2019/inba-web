@@ -1,7 +1,7 @@
 ---
 title: "✨ Inspiradora Charla Magistral de Ciencias"
 date: 2026-05-19
-image: "http://localhost/2026b/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-19-at-16.04.13-4.jpeg"
+image: "images/noticias/charla-magistral.jpeg"
 excerpt: "El lunes 27 de abril de 2026, vivimos una inspiradora Charla Magistral de Ciencias en nuestro querido Internado Nacional Barros Arana."
 ---
 

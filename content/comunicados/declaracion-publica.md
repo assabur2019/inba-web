@@ -1,7 +1,7 @@
 ---
 title: "Declaración pública"
 date: 2026-06-09
-image: "/images/comunicados/declaracion-publica.jpg"
+image: "images/comunicados/declaracion-publica.jpg"
 excerpt: "La comunidad educativa del INBA manifiesta su categórico rechazo a las afirmaciones emitidas en un reportaje de Chilevisión Noticias del 7 de junio de 2026, que presentó registros de años anteriores como hechos actuales."
 ---
 

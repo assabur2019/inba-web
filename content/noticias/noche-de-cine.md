@@ -1,7 +1,7 @@
 ---
 title: "Noche de cine en el INBA: una comunidad que se encuentra"
 date: 2026-04-17
-image: "http://localhost/2026b/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-17-at-20.18.26.jpeg"
+image: "images/noticias/noche-de-cine.jpeg"
 excerpt: "El Internado Nacional Barros Arana abrió sus puertas a toda su comunidad para vivir una jornada de encuentro y convivencia, en el marco de una nueva noche de cine."
 ---
 

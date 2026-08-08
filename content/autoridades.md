@@ -1,7 +1,7 @@
 ---
 title: "Nuestras autoridades"
 layout: "autoridades"
-hero_image: "/images/autoridades-hero.webp"
+hero_image: "images/autoridades-hero.webp"
 authorities:
   - name: "Urbi Rojas Arriarán"
     role: "Rectora"

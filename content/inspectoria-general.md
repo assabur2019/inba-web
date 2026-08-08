@@ -1,7 +1,7 @@
 ---
 title: "Inspectoría General"
 layout: "estamento"
-hero_image: "/images/regimen-internado/dormitorio.jpeg"
+hero_image: "images/regimen-internado/dormitorio.jpeg"
 team:
   - name: "Ana Valenzuela Silva"
     role: "Inspectora General (s)"

@@ -1,7 +1,7 @@
 ---
 title: "✨ ¡Nace INBA Comunica! Conéctate con nuestra comunidad"
 date: 2026-04-27
-image: "http://localhost/2026b/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-17-at-20.49.32-2.jpeg"
+image: "images/noticias/inba-comunica.jpeg"
 excerpt: "El 27 de abril de 2026 lanzamos oficialmente INBA Comunica, el nuevo canal de comunicación del Internado Nacional Barros Arana, bajo el lema 'Conéctate con nuestra comunidad'."
 ---
 

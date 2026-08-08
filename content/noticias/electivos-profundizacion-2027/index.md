@@ -1,7 +1,7 @@
 ---
 title: "Elige tu camino: Electivos de Profundización 2027"
 date: 2026-08-07
-image: "/noticias/electivos-profundizacion-2027/hero.jpg"
+image: "noticias/electivos-profundizacion-2027/hero.jpg"
 excerpt: "En los próximos días, los estudiantes de 3° y 4° medio deberán elegir los Electivos de Profundización que cursarán el próximo año. Revive la Feria de Electivos y conoce la oferta académica 2027."
 layout: "electivos"
 ---

@@ -8,7 +8,7 @@
   <div class="news-grid" id="news-grid">
     {{ range .Pages.ByDate.Reverse }}
     <article class="news-card" data-search-text="{{ (printf "%s %s" .Title (.Params.excerpt | default .Summary)) | lower }}">
-      {{ if .Params.image }}<a href="{{ .RelPermalink }}"><img src="{{ .Params.image }}" alt="{{ .Title }}"></a>{{ end }}
+      {{ if .Params.image }}<a href="{{ .RelPermalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}"></a>{{ end }}
       <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       <p class="meta">{{ .Date | time.Format ":date_long" }}</p>
       <p>{{ .Params.excerpt | default .Summary }}</p>

@@ -1,7 +1,7 @@
 ---
 title: "👔 Uniforme escolar INBA"
 date: 2026-04-07
-image: "http://localhost/2026b/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-18.09.56-1.jpeg"
+image: "images/noticias/uniforme-escolar.jpeg"
 excerpt: "Informamos a padres, madres y apoderados la normativa y uso del uniforme escolar, de acuerdo con las orientaciones del MINEDUC y la Superintendencia de Educación."
 ---
 

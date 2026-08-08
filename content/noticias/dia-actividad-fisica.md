@@ -1,7 +1,7 @@
 ---
 title: "🏃‍♂️✨ INBA celebra la vida sana: energía, deporte y comunidad en el Día de la Actividad Física"
 date: 2026-04-18
-image: "http://localhost/2026b/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-17-at-20.49.31.jpeg"
+image: "images/noticias/dia-actividad-fisica.jpeg"
 excerpt: "El INBA vivió una vibrante jornada en el marco del Día de la Actividad Física, celebrada el viernes 17 de abril con la participación de toda la comunidad educativa."
 ---
 

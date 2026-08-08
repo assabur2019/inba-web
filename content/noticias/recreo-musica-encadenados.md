@@ -1,7 +1,7 @@
 ---
 title: "✨ El recreo se llenó de música"
 date: 2026-05-19
-image: "http://localhost/2026b/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-19-at-15.32.35-1-1024x768.jpeg"
+image: "images/noticias/recreo-musica.jpeg"
 excerpt: "El miércoles 6 de mayo, vivimos una jornada especial donde el recreo se llenó de música, energía y talento inbano, junto a la presentación de la banda Encadenados."
 ---
 

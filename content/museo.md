@@ -1,29 +1,29 @@
 ---
 title: "Museo INBA"
 layout: "museo"
-hero_image: "/images/museo/hall-biblioteca.jpg"
+hero_image: "images/museo/hall-biblioteca.jpg"
 declaration:
   decreto: "Decreto N.º 64 (2024)"
   categoria: "Monumento Histórico Nacional"
   localizacion: "Región Metropolitana de Santiago"
   tipologia: "Inmueble"
 gallery:
-  - image: "/images/museo/dia-patrimonio.jpg"
+  - image: "images/museo/dia-patrimonio.jpg"
     label: "Día del Patrimonio: la historia que compartimos"
-  - image: "/images/museo/museo-educacion.jpg"
+  - image: "images/museo/museo-educacion.jpg"
     label: "Museo de la Educación Gabriela Mistral"
-  - image: "/images/museo/sitio-memoria-mural.jpg"
+  - image: "images/museo/sitio-memoria-mural.jpg"
     label: "Sitio de Memoria"
-  - image: "/images/museo/sitio-memoria-visita.jpg"
+  - image: "images/museo/sitio-memoria-visita.jpg"
     label: "Visita conmemorativa"
 monument_slider:
-  - image: "/images/museo/monumento-01.png"
+  - image: "images/museo/monumento-01.png"
     label: "Fachada principal, acceso INBA"
-  - image: "/images/museo/monumento-02.jpg"
+  - image: "images/museo/monumento-02.jpg"
     label: "Detalle de galería interior"
-  - image: "/images/museo/monumento-03.jpg"
+  - image: "images/museo/monumento-03.jpg"
     label: "Entorno patrimonial del edificio"
-  - image: "/images/museo/monumento-04.jpg"
+  - image: "images/museo/monumento-04.jpg"
     label: "Detalle de cornisa y techumbre"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Unidad Técnica Pedagógica (UTP)"
 layout: "estamento"
-hero_image: "/images/instalaciones/biblioteca.jpg"
+hero_image: "images/instalaciones/biblioteca.jpg"
 team:
   - name: "Karina Vera Jaure"
     role: "Jefa UTP"

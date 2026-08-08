@@ -1,7 +1,7 @@
 ---
 title: "Programa de Integración Escolar (PIE)"
 layout: "estamento"
-hero_image: "/images/instalaciones/aula-magna.jpg"
+hero_image: "images/instalaciones/aula-magna.jpg"
 team:
   - name: "Miguel Trujillo N."
     role: "Coordinador PIE"

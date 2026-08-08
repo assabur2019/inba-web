@@ -1,7 +1,7 @@
 ---
 title: "Departamento de Convivencia Escolar"
 layout: "estamento"
-hero_image: "/images/regimen-internado/comedor.jpg"
+hero_image: "images/regimen-internado/comedor.jpg"
 team:
   - name: "Carmen Cortés Díaz"
     role: "Coordinadora de Convivencia"

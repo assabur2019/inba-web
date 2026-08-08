@@ -1,7 +1,7 @@
 ---
 title: "Comunicado a padres, madres y apoderados"
 date: 2026-06-10
-image: "/images/comunicados/comunicado-10-06-2026.jpg"
+image: "images/comunicados/comunicado-10-06-2026.jpg"
 excerpt: "Comunicado dirigido a padres, madres y apoderados sobre acompañamiento familiar, uniforme, uso de celulares e interferiado del 17 de julio."
 popup: true
 ---

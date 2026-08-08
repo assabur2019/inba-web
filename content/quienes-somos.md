@@ -1,8 +1,8 @@
 ---
 title: "Quiénes somos"
 layout: "quienes-somos"
-hero_image: "/images/quienes-somos-hero.jpg"
-closing_image: "/images/quienes-somos-hero.jpg"
+hero_image: "images/quienes-somos-hero.jpg"
+closing_image: "images/quienes-somos-hero.jpg"
 ---
 
 El Internado Nacional Barros Arana (INBA) es un liceo emblemático chileno de carácter municipal y laico, ubicado en la comuna de Santiago, frente al parque Quinta Normal. Comenzó a funcionar de forma independiente el 20 de mayo de 1902, siendo el primer internado estatal de Chile.

@@ -1,7 +1,7 @@
 ---
 title: "🏛️ ¡124 años de historia y mística inbana! 🔴🟡"
 date: 2026-06-07
-image: "http://localhost/2026b/wp-content/uploads/2026/05/IMG_1953-1024x683.jpg"
+image: "images/noticias/aniversario-inba.jpg"
 excerpt: "Hoy, 20 de mayo de 2026, celebramos el 124° Aniversario del primer internado estatal de Chile: el Internado Nacional Barros Arana (INBA)."
 ---
 
