@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - Internado Nacional Barros Arana</title>
+    <meta name="description" content="{{ .Params.excerpt }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="pill-badge"><i class="fa-solid fa-compass"></i> Proceso de Electividad 2027</span>
+                    <h1>{{ .Title }}</h1>
+                    <p class="lead-paragraph">
+                        En los próximos días, los estudiantes que actualmente cursan 3° y 4° medio deberán tomar una de las decisiones más importantes de su trayectoria escolar: elegir los Electivos de Profundización que cursarán el próximo año.
+                    </p>
+                    <div class="hero-meta">
+                        <span><i class="fa-regular fa-building"></i> UTP &amp; Dirección Pedagógica</span>
+                        <span><i class="fa-regular fa-calendar-check"></i> Publicado para 3° y 4° Medio</span>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="image-wrapper">
+                        <img src="hero.jpg" alt="Feria de Electivos de Profundización INBA">
+                        <div class="media-caption">
+                            <i class="fa-solid fa-camera"></i> Estudiantes participando en la Feria de Electivos INBA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-body section-padding">
+            <div class="container container-narrow">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="feature-text">
+                        <h3>Más que una asignatura</h3>
+                        <p>Cada electivo representa una oportunidad para descubrir intereses, fortalecer talentos y proyectar el futuro académico y profesional de cada estudiante. Estas asignaturas permiten profundizar en áreas del conocimiento de acuerdo con las motivaciones personales, favoreciendo un aprendizaje más significativo y conectado con los desafíos del mundo actual.</p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2><i class="fa-solid fa-users-viewfinder"></i> Feria de Electivos de Profundización INBA</h2>
+                    <p>Con el propósito de apoyar este proceso, el <strong>Internado Nacional Barros Arana</strong> realizó la <em>Feria de Electivos de Profundización</em>, una instancia en la que los distintos departamentos académicos presentaron sus propuestas, resolvieron dudas y compartieron con los estudiantes los objetivos, metodologías y experiencias de cada asignatura.</p>
+                    <p>Durante la feria, los docentes dieron a conocer los electivos que se impartirán, invitando a los estudiantes a conocer sus características y a reflexionar sobre cómo cada uno puede contribuir a sus proyectos personales y vocacionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-gallery-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-film"></i> Registro Audiovisual</span>
+                    <h2>Revive la Feria de Electivos en Video</h2>
+                    <p>Conoce de cerca las presentaciones, la interacción con los docentes y el ambiente vivido durante la feria.</p>
+                </div>
+
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="video1.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-badge"><i class="fa-solid fa-play"></i> Video 1</span>
+                            <h3>Presentación de Departamentos Académicos</h3>
+                            <p>Docentes dando a conocer las metodologías y objetivos de los electivos.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="video2.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-badge"><i class="fa-solid fa-play"></i> Video 2</span>
+                            <h3>Experiencias e Interacción de Estudiantes</h3>
+                            <p>Resolución de dudas e intercambio con estudiantes de 3° y 4° Medio.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="video3.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-badge"><i class="fa-solid fa-play"></i> Video 3</span>
+                            <h3>Orientación Vocacional y Proyectos de Vida</h3>
+                            <p>Recomendaciones y reflexiones sobre cómo elegir la trayectoria personal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section section-padding" id="catalogo">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Oferta Académica 2027</span>
+                    <h2>Explora la Oferta de Electivos</h2>
+                    <p>Filtra por nivel académico o busca por área disciplinar de tu preferencia.</p>
+                </div>
+
+                <div class="catalog-controls">
+                    <div class="level-tabs">
+                        <button class="tab-btn active" data-level="all">Todos (3° y 4° Medio 2027)</button>
+                        <button class="tab-btn" data-level="3M"><i class="fa-solid fa-graduation-cap"></i> 3° Medio 2027</button>
+                        <button class="tab-btn" data-level="4M"><i class="fa-solid fa-graduation-cap"></i> 4° Medio 2027</button>
+                    </div>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchElectives" placeholder="Buscar electivo por nombre o asignatura...">
+                    </div>
+                </div>
+
+                <div class="electives-grid" id="electivesContainer"></div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding">
+            <div class="container container-narrow">
+                <div class="cta-card">
+                    <div class="cta-badge"><i class="fa-solid fa-bullseye"></i> Toma de Decisión Consciente</div>
+                    <h2>Una decisión fundamentada para tu proyecto de vida</h2>
+                    <p>La elección de un electivo debe responder a los intereses, habilidades y proyecciones de cada estudiante. Es una oportunidad para explorar nuevas áreas del conocimiento, profundizar en aquellas que generan mayor motivación y prepararse para los desafíos de la educación superior y del mundo laboral.</p>
+
+                    <div class="inba-callout">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <blockquote>
+                            Desde el INBA invitamos a nuestros estudiantes a informarse, conversar con sus profesores, resolver todas sus inquietudes y realizar una elección consciente y responsable. Cada decisión que tomen hoy es un paso más en la construcción de su proyecto de vida.
+                        </blockquote>
+                    </div>
+
+                    <div class="final-motto">
+                        ¡Elige el camino que más te inspire y atrévete a profundizar en aquello que te apasiona!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p><strong>Internado Nacional Barros Arana</strong> &copy; {{ now.Format "2006" }} - Comunicación Institucional y UTP</p>
+            <p><a href="{{ "/noticias/" | relURL }}" style="color:#94a3b8;">&larr; Volver a Noticias</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="{{ "js/nav-menu.js" | relURL }}"></script>
+</body>
+</html>

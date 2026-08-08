@@ -1,0 +1,12 @@
+# Salida generada por Hugo
+/public/
+/resources/
+.hugo_build.lock
+
+# Respaldo local de WordPress (1,48 GB)
+/banco-imagenes-2026b/
+
+# Archivos locales del sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/

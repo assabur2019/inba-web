@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="wrap article-single">
+  <p class="meta"><a href="{{ "/noticias/" | relURL }}">&larr; Noticias</a> · {{ .Date | time.Format ":date_long" }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.image }}
+  <img class="article-hero" src="{{ .Params.image }}" alt="{{ .Title }}">
+  {{ end }}
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

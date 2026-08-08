@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="qs-hero">
+  {{ if .Params.hero_image }}<img class="qs-hero-image" src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}">{{ end }}
+  <div class="qs-hero-shade"></div>
+  <div class="wrap qs-hero-content">
+    <p class="home-eyebrow">Internado Nacional Barros Arana</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+
+<article class="wrap article-single qs-body">
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if .Params.facilities }}
+<section class="in-grid wrap">
+  {{ range .Params.facilities }}
+  <figure class="in-card">
+    <img src="{{ .image | relURL }}" alt="{{ .label }}" loading="lazy">
+  </figure>
+  {{ end }}
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{ $noticias := where site.RegularPages "Section" "noticias" }}
+{{ $noticias = $noticias.ByDate.Reverse }}
+{{ $principal := first 1 $noticias }}
+{{ $portada := first 3 $noticias }}
+{{ $secundarias := first 3 (after 1 $noticias) }}
+
+<section class="home-carousel" aria-label="Noticias destacadas">
+  {{ range $index, $noticia := $portada }}
+  <article class="home-hero{{ if eq $index 0 }} is-active{{ end }}" data-news-url="{{ $noticia.RelPermalink }}" aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
+    {{ if $noticia.Params.image }}<img class="home-hero-image" src="{{ $noticia.Params.image }}" alt="{{ $noticia.Title }}">{{ end }}
+    <div class="home-hero-shade"></div>
+    <div class="wrap home-hero-content">
+      <p class="home-eyebrow">Actualidad INBA</p>
+      <h1>{{ $noticia.Title }}</h1>
+      <p class="home-hero-copy">{{ $noticia.Params.excerpt | default $noticia.Summary }}</p>
+      <div class="home-hero-actions">
+        <a class="home-button" href="{{ $noticia.RelPermalink }}">Leer noticia</a>
+        <a class="home-text-link" href="{{ "quienes-somos/" | relURL }}">Conoce el INBA <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </article>
+  {{ end }}
+  <div class="wrap carousel-controls">
+    <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Noticia anterior">&larr;</button>
+    <div class="carousel-dots" role="tablist" aria-label="Seleccionar noticia">
+      {{ range $index, $noticia := $portada }}
+      <button class="carousel-dot{{ if eq $index 0 }} is-active{{ end }}" type="button" data-carousel-dot="{{ $index }}" role="tab" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}" aria-label="Mostrar noticia {{ add $index 1 }}"></button>
+      {{ end }}
+    </div>
+    <button class="carousel-arrow" type="button" data-carousel-next aria-label="Siguiente noticia">&rarr;</button>
+  </div>
+</section>
+
+<section class="home-intro wrap">
+  <p class="home-eyebrow">Comunidad educativa</p>
+  <div class="home-intro-grid">
+    <h2>Educación pública con historia, presente y futuro.</h2>
+    <div>
+      <p>El INBA es el primer internado estatal de Chile. Somos una comunidad laica y plural que recibe estudiantes de todo el país, impulsando una formación académica, cultural, deportiva y social.</p>
+      <a class="inline-link" href="{{ "quienes-somos/" | relURL }}">Nuestra misión y visión <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="home-links">
+  <div class="wrap home-links-grid">
+    <a href="{{ "quienes-somos/" | relURL }}"><span>01</span><strong>Quiénes somos</strong><small>Historia, misión y visión institucional</small></a>
+    <a href="{{ "antecedentes/" | relURL }}"><span>02</span><strong>Documentos</strong><small>Información y antecedentes para la comunidad</small></a>
+    <a href="{{ "noticias/" | relURL }}"><span>03</span><strong>Noticias INBA</strong><small>Actividad académica y vida escolar</small></a>
+  </div>
+</section>
+
+<section class="home-news wrap">
+  <div class="home-section-heading">
+    <div><p class="home-eyebrow">Actualidad</p><h2>Noticias INBA</h2></div>
+    <a class="inline-link" href="{{ "noticias/" | relURL }}">Ver todas <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="home-news-grid">
+    {{ range $principal }}
+    <article class="home-news-featured">
+      {{ if .Params.image }}<a href="{{ .RelPermalink }}"><img src="{{ .Params.image }}" alt="{{ .Title }}"></a>{{ end }}
+      <div><p class="news-date">{{ .Date | time.Format ":date_long" }}</p><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Params.excerpt | default .Summary }}</p></div>
+    </article>
+    {{ end }}
+    <div class="home-news-list">
+      {{ range $secundarias }}
+      <article><p class="news-date">{{ .Date | time.Format ":date_long" }}</p><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><a class="news-arrow" href="{{ .RelPermalink }}" aria-label="Leer {{ .Title }}">&rarr;</a></article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

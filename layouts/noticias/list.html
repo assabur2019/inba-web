@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="wrap">
+  <h1>Noticias</h1>
+  <div class="news-search">
+    <input type="search" id="news-search-input" placeholder="Buscar noticias por título o contenido..." aria-label="Buscar noticias">
+    <p class="news-search-empty" id="news-search-empty" hidden>No se encontraron noticias que coincidan con tu búsqueda.</p>
+  </div>
+  <div class="news-grid" id="news-grid">
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="news-card" data-search-text="{{ (printf "%s %s" .Title (.Params.excerpt | default .Summary)) | lower }}">
+      {{ if .Params.image }}<a href="{{ .RelPermalink }}"><img src="{{ .Params.image }}" alt="{{ .Title }}"></a>{{ end }}
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p class="meta">{{ .Date | time.Format ":date_long" }}</p>
+      <p>{{ .Params.excerpt | default .Summary }}</p>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

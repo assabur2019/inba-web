@@ -1,0 +1,127 @@
+baseURL = 'http://localhost:8090/'
+relativeURLs = true
+locale = 'es-CL'
+title = 'INBA - Internado Nacional Barros Arana'
+
+[params]
+  subtitle = "Internado Nacional Barros Arana"
+  phone = "+56 9 3456 8978"
+  email = "info@inba.cl"
+  address = "Santo Domingo 3535, Santiago"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Nosotros"
+    identifier = "nosotros"
+    url = "#"
+    weight = 2
+  [[menus.main]]
+    name = "Quiénes somos"
+    parent = "nosotros"
+    url = "/quienes-somos/"
+    weight = 1
+  [[menus.main]]
+    name = "Nuestras autoridades"
+    parent = "nosotros"
+    url = "/autoridades/"
+    weight = 2
+  [[menus.main]]
+    name = "Nuestras instalaciones"
+    parent = "nosotros"
+    url = "/instalaciones/"
+    weight = 3
+  [[menus.main]]
+    name = "Régimen de Internado"
+    parent = "nosotros"
+    url = "/regimen-internado/"
+    weight = 4
+  [[menus.main]]
+    name = "Museo INBA"
+    parent = "nosotros"
+    url = "/museo/"
+    weight = 5
+  [[menus.main]]
+    name = "Estamentos"
+    identifier = "estamentos"
+    url = "#"
+    weight = 3
+  [[menus.main]]
+    name = "Programa de Integración Escolar (PIE)"
+    parent = "estamentos"
+    url = "/pie/"
+    weight = 1
+  [[menus.main]]
+    name = "Unidad Técnica Pedagógica (UTP)"
+    parent = "estamentos"
+    url = "/utp/"
+    weight = 2
+  [[menus.main]]
+    name = "Convivencia Escolar"
+    parent = "estamentos"
+    url = "/convivencia-escolar/"
+    weight = 3
+  [[menus.main]]
+    name = "Inspectoría General"
+    parent = "estamentos"
+    url = "/inspectoria-general/"
+    weight = 4
+  [[menus.main]]
+    name = "Régimen de Internado"
+    parent = "estamentos"
+    url = "/regimen-internado/"
+    weight = 5
+  [[menus.main]]
+    name = "Comunidad"
+    identifier = "comunidad"
+    url = "#"
+    weight = 4
+  [[menus.main]]
+    name = "Centro de Padres"
+    parent = "comunidad"
+    url = "#"
+    weight = 1
+  [[menus.main]]
+    name = "Centro de Alumnos"
+    parent = "comunidad"
+    url = "#"
+    weight = 2
+  [[menus.main]]
+    name = "Esposex INBA"
+    parent = "comunidad"
+    url = "#"
+    weight = 3
+  [[menus.main]]
+    name = "Ex Alumnos"
+    parent = "comunidad"
+    url = "#"
+    weight = 4
+  [[menus.main]]
+    name = "Documentos"
+    identifier = "documentos"
+    url = "#"
+    weight = 5
+  [[menus.main]]
+    name = "Documentos"
+    parent = "documentos"
+    url = "/documentos/"
+    weight = 1
+  [[menus.main]]
+    name = "Antecedentes"
+    parent = "documentos"
+    url = "/antecedentes/"
+    weight = 2
+  [[menus.main]]
+    name = "Noticias"
+    url = "/noticias/"
+    weight = 6
+  [[menus.main]]
+    name = "Comunicados"
+    url = "/comunicados/"
+    weight = 7

@@ -1,0 +1,29 @@
+{{ $comunicados := where site.RegularPages "Section" "comunicados" }}
+{{ $comunicados = $comunicados.ByDate.Reverse }}
+{{ $destacados := where $comunicados "Params.popup" true }}
+{{ if $destacados }}
+  {{ $comunicados = $destacados }}
+{{ end }}
+{{ with first 1 $comunicados }}
+{{ range . }}
+<div id="popup-comunicado" class="popup-overlay" data-comunicado-id="{{ .RelPermalink }}" hidden>
+  <div class="popup-card" role="dialog" aria-modal="true" aria-label="Comunicado oficial">
+    <button class="popup-close" type="button" data-popup-close aria-label="Cerrar">&times;</button>
+    {{ if .Params.image }}
+    <a class="popup-image-link" href="{{ .Params.image | relURL }}" target="_blank" rel="noopener">
+      <img class="popup-image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+    </a>
+    {{ end }}
+    <div class="popup-text">
+      <p class="popup-eyebrow">Comunicado oficial</p>
+      <h2>{{ .Title }}</h2>
+      <p class="popup-date">{{ .Date | time.Format ":date_long" }}</p>
+      {{ if not .Params.image }}
+      <p class="popup-body">{{ .Params.excerpt | default .Summary }}</p>
+      {{ end }}
+      <a class="popup-cta" href="{{ .RelPermalink }}">Ver comunicado completo <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}

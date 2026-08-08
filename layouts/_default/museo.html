@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ if .Params.monument_slider }}
+<section class="qs-hero mo-hero">
+  <div class="mo-slider-viewport">
+    {{ range $index, $slide := .Params.monument_slider }}
+    <figure class="mo-slide{{ if eq $index 0 }} is-active{{ end }}">
+      <img src="{{ $slide.image | relURL }}" alt="{{ $slide.label }}">
+    </figure>
+    {{ end }}
+  </div>
+  <div class="qs-hero-shade"></div>
+  <div class="wrap qs-hero-content">
+    <p class="home-eyebrow">Monumento Histórico Nacional</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="wrap mo-hero-controls">
+    <button class="mo-arrow mo-arrow-prev" type="button" data-mo-prev aria-label="Imagen anterior">&larr;</button>
+    <div class="mo-dots" role="tablist" aria-label="Seleccionar imagen">
+      {{ range $index, $slide := .Params.monument_slider }}
+      <button class="mo-dot{{ if eq $index 0 }} is-active{{ end }}" type="button" data-mo-dot="{{ $index }}" role="tab" aria-label="Mostrar imagen {{ add $index 1 }}"></button>
+      {{ end }}
+    </div>
+    <button class="mo-arrow mo-arrow-next" type="button" data-mo-next aria-label="Imagen siguiente">&rarr;</button>
+  </div>
+</section>
+{{ else }}
+<section class="qs-hero">
+  {{ if .Params.hero_image }}<img class="qs-hero-image" src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}">{{ end }}
+  <div class="qs-hero-shade"></div>
+  <div class="wrap qs-hero-content">
+    <p class="home-eyebrow">Monumento Histórico Nacional</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.declaration }}
+<section class="mu-badges wrap">
+  <div><span>Decreto</span><strong>{{ .Params.declaration.decreto }}</strong></div>
+  <div><span>Categoría</span><strong>{{ .Params.declaration.categoria }}</strong></div>
+  <div><span>Localización</span><strong>{{ .Params.declaration.localizacion }}</strong></div>
+  <div><span>Tipología</span><strong>{{ .Params.declaration.tipologia }}</strong></div>
+</section>
+{{ end }}
+
+<article class="wrap article-single qs-body">
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if .Params.gallery }}
+<section class="in-grid wrap">
+  {{ range .Params.gallery }}
+  <figure class="in-card">
+    <img src="{{ .image | relURL }}" alt="{{ .label }}" loading="lazy">
+  </figure>
+  {{ end }}
+</section>
+{{ end }}
+{{ end }}

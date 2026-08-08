@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="qs-hero">
+  {{ if .Params.hero_image }}<img class="qs-hero-image" src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}">{{ end }}
+  <div class="qs-hero-shade"></div>
+  <div class="wrap qs-hero-content">
+    <p class="home-eyebrow">Internado Nacional Barros Arana</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+
+<article class="wrap article-single qs-body">
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if .Params.closing_image }}
+<section class="qs-closing wrap">
+  <img src="{{ .Params.closing_image | relURL }}" alt="{{ .Title }}" loading="lazy">
+</section>
+{{ end }}
+{{ end }}

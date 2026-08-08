@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="qs-hero">
+  {{ if .Params.hero_image }}<img class="qs-hero-image" src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}">{{ end }}
+  <div class="qs-hero-shade"></div>
+  <div class="wrap qs-hero-content">
+    <p class="home-eyebrow">Internado Nacional Barros Arana</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+
+<article class="wrap article-single qs-body">
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if .Params.documents }}
+<section class="doc-grid wrap">
+  {{ range .Params.documents }}
+  <article class="doc-card">
+    <div class="doc-fold"></div>
+    <span class="doc-badge">PDF</span>
+    <svg class="doc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+    <h3>{{ .title }}</h3>
+    <p>{{ .description }}</p>
+    <a class="doc-link" href="{{ .url }}" target="_blank" rel="noopener">Ver documento <span aria-hidden="true">&rarr;</span></a>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
+{{ end }}

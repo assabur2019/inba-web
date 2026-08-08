@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Sitio oficial del Internado Nacional Barros Arana{{ end }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v={{ now.Unix }}">
+  <link rel="stylesheet" href="{{ "pagefind/pagefind-ui.css" | relURL }}">
+</head>
+<body>
+  {{ partial "popup-comunicado.html" . }}
+  {{ partial "header.html" . }}
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var el = document.getElementById('search');
+      if (el && window.PagefindUI) {
+        new PagefindUI({ element: '#search', showSubResults: true, showImages: false });
+      }
+    });
+  </script>
+  {{ if .IsHome }}
+  <script src="{{ "js/home-carousel.js" | relURL }}?v={{ now.Unix }}"></script>
+  {{ end }}
+  {{ if and (eq .Section "noticias") .IsNode }}
+  <script src="{{ "js/news-search.js" | relURL }}?v={{ now.Unix }}"></script>
+  {{ end }}
+  <script src="{{ "js/nav-menu.js" | relURL }}?v={{ now.Unix }}"></script>
+  {{ if .Params.monument_slider }}
+  <script src="{{ "js/museo-slider.js" | relURL }}?v={{ now.Unix }}"></script>
+  {{ end }}
+  <script src="{{ "js/popup-config.js" | relURL }}"></script>
+  <script src="{{ "js/popup-comunicado.js" | relURL }}?v={{ now.Unix }}"></script>
+</body>
+</html>

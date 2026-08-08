@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^$ /2026-nuevo/public/ [R=302,L]
