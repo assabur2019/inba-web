@@ -3,10 +3,30 @@
   <p class="meta"><a href="{{ "/noticias/" | relURL }}">&larr; Noticias</a> · {{ .Date | time.Format ":date_long" }}</p>
   <h1>{{ .Title }}</h1>
   {{ if .Params.image }}
-  <img class="article-hero" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+  <img class="article-hero" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="eager" decoding="async" fetchpriority="high" width="1200" height="800" sizes="(max-width: 768px) 100vw, 1200px">
   {{ end }}
   <div class="article-body">
     {{ .Content }}
   </div>
+  {{ with .Params.gallery_page }}
+  <a class="gallery-preview-link" href="{{ . | relURL }}">Ver galería</a>
+  {{ end }}
 </article>
+
+{{ if .Params.gallery }}
+<section class="in-grid wrap" aria-label="Galería de imágenes">
+  {{ range first 3 .Params.gallery }}
+  {{ $galleryImage := . }}
+  {{ $galleryLabel := "" }}
+  {{ if reflect.IsMap . }}
+    {{ $galleryImage = .image }}
+    {{ $galleryLabel = .label }}
+  {{ end }}
+  <figure class="in-card">
+    <img src="{{ $galleryImage | relURL }}" alt="{{ $galleryLabel | default $.Title }}" loading="lazy" decoding="async" width="800" height="600" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+    {{ if $galleryLabel }}<figcaption>{{ $galleryLabel }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
+</section>
+{{ end }}
 {{ end }}

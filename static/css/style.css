@@ -22,6 +22,11 @@ body {
   line-height: 1.55;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -152,13 +157,44 @@ a:hover { text-decoration: underline; }
 .news-card {
   border-top: 1px solid var(--line);
   padding-top: 12px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.news-card:hover {
+  transform: translateY(-3px);
 }
 .news-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; filter: saturate(0.9); }
 .news-card h3 { font-family: var(--display-font); font-size: 1.42rem; line-height: 1.12; margin: 14px 0 7px; }
 .news-card h3 a { color: var(--text); }
 .news-card p { margin: 0 0 12px; font-size: 0.88rem; color: #555; }
 .news-card .meta { margin: 12px 0 0; color: var(--inba-red); font-weight: 700; }
+.gallery-preview-link { display: inline-block; margin-top: 12px; padding: 8px 14px; background: var(--inba-red); color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; }
 
+/* Galerías Page */
+.galerias-page { width: 100%; max-width: 1000px; margin: 0 auto; padding: 30px 20px 70px; }
+.galerias-page h1 { font-family: var(--display-font); font-size: 2.2rem; margin-bottom: 10px; border-bottom: 3px solid var(--text); padding-bottom: 12px; }
+.galerias-page .lead { font-size: 1.02rem; color: #555; margin-bottom: 40px; }
+.galerías-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.galería-card { background: var(--card-bg); border-top: 3px solid var(--inba-red); overflow: hidden; transition: transform 220ms ease; }
+.galería-card:hover { transform: translateY(-6px); }
+.galería-link { text-decoration: none; color: var(--text); display: block; }
+.galería-link:hover { text-decoration: none; }
+.galería-preview { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: var(--bg); }
+.galería-preview img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 400ms ease; }
+.galería-card:hover .galería-preview img { transform: scale(1.08); }
+.galería-overlay { position: absolute; inset: 0; display: flex; align-items: flex-end; padding: 16px; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); }
+.galería-count { margin: 0; color: #fff; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.5px; }
+.galería-card h3 { margin: 16px; font-family: var(--display-font); font-size: 1.35rem; line-height: 1.2; color: var(--text); }
+.archivo-galerias { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.archivo-galeria { border-top: 3px solid var(--inba-red); padding-top: 14px; }
+.archivo-galeria h2 { margin: 0 0 14px; font-family: var(--display-font); font-size: 1.5rem; line-height: 1.2; color: var(--text); }
+.archivo-galeria-enlace { display: block; width: fit-content; color: var(--inba-red); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; }
+.archivo-galeria-enlace:hover { text-decoration: none; color: var(--inba-red-dark); }
+.archivo-galeria-enlace span { display: block; margin-top: 12px; }
+.archivo-galeria-portada { margin: 0; max-width: 420px; overflow: hidden; background: var(--card-bg); aspect-ratio: 4 / 3; }
+.archivo-galeria-portada img, .archivo-galeria-imagen img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 400ms ease; }
+.archivo-galeria-portada:hover img, .archivo-galeria-imagen:hover img { transform: scale(1.05); }
+.galeria-detalle-imagenes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.archivo-galeria-imagen { margin: 0; overflow: hidden; background: var(--card-bg); aspect-ratio: 4 / 3; }
 /* Home landing */
 .home-carousel { position: relative; min-height: 540px; background: var(--text); }
 .home-hero { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; overflow: hidden; opacity: 0; pointer-events: none; transition: opacity 500ms ease; }
@@ -396,6 +432,9 @@ body.popup-open { overflow: hidden; }
   .featured-text { padding: 32px 24px; }
   .news-grid { grid-template-columns: 1fr; gap: 28px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .galerías-grid { grid-template-columns: 1fr; gap: 22px; }
+  .archivo-galerias { grid-template-columns: 1fr; gap: 28px; }
+  .galeria-detalle-imagenes { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .home-carousel { min-height: 500px; }
   .home-intro { padding-top: 58px; padding-bottom: 58px; }
   .home-intro-grid, .home-news-grid, .home-news-featured { grid-template-columns: 1fr; gap: 28px; }

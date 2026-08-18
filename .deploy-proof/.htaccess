@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteRule ^$ - [L]
+RewriteRule ^index\.html$ - [L]
+RewriteRule ^prueba-inyeccion\.html$ - [L]
+RewriteRule ^ - [F,L]

@@ -10,4 +10,4 @@ Para los estudiantes internos, se recuerda coordinar con anticipación los horar
 
 Deseamos a todas y todos un buen descanso junto a sus familias.
 
-*(Contenido migrado como prueba desde el sitio actual; el comunicado completo se revisará en la migración final.)*
+La Dirección del establecimiento agradece la comprensión y la confianza de la comunidad educativa y recuerda que estas semanas también son una oportunidad para descansar, reencontrarse y fortalecer el vínculo familiar.

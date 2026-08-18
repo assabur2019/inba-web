@@ -1,0 +1,9 @@
+galleries:
+  - title: "Aniversario INBA"
+    slug: "aniversario"
+    directory: "images/galerias/aniversario"
+    cover: "IMG_1819.jpg"
+  - title: "Galería 18 de Septiembre 2025"
+    slug: "18-2025"
+    directory: "images/galerias/18-septiembre-2025"
+    cover: "IMG_9854.jpg"

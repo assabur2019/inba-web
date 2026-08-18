@@ -3,6 +3,12 @@
 /resources/
 .hugo_build.lock
 
+# Paquetes locales de deploy (no van al repo)
+.deploy-zips/
+
+# Residuos de edición/transferencia
+*.tmp
+
 # Respaldo local de WordPress (1,48 GB)
 /banco-imagenes-2026b/
 

@@ -4,7 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Sitio oficial del Internado Nacional Barros Arana{{ end }}">
+  {{ $description := .Description }}
+  {{ if not $description }}
+    {{ $description = .Summary | plainify | truncate 160 }}
+  {{ end }}
+  {{ if not $description }}
+    {{ $description = printf "%s | Educación pública, formación integral y comunidad escolar" .Site.Params.subtitle }}
+  {{ end }}
+  <meta name="description" content="{{ $description }}">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="{{ .Site.Title }}">
+  <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+  <meta name="theme-color" content="#b23a3a">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ $description }}">
+  {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v={{ now.Unix }}">
   <link rel="stylesheet" href="{{ "pagefind/pagefind-ui.css" | relURL }}">
 </head>
@@ -15,6 +37,42 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Internado Nacional Barros Arana",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ "images/logo-inba.png" | absURL }}",
+    "sameAs": [],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+56 9 3456 8978",
+      "contactType": "información general",
+      "areaServed": "CL",
+      "availableLanguage": ["Spanish"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Santo Domingo 3535",
+      "addressLocality": "Santiago",
+      "addressCountry": "CL"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "inLanguage": "es-CL",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Internado Nacional Barros Arana"
+    }
+  }
+  </script>
   <script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
   <script>
     window.addEventListener('DOMContentLoaded', function () {

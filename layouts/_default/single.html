@@ -2,7 +2,7 @@
 <article class="wrap article-single page-permanente">
   <h1>{{ .Title }}</h1>
   {{ if .Params.image }}
-  <img class="article-hero" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+  <img class="article-hero" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="eager" decoding="async" fetchpriority="high" width="1200" height="800" sizes="(max-width: 768px) 100vw, 1200px">
   {{ end }}
   <div class="article-body">
     {{ .Content }}

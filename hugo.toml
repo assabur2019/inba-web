@@ -2,9 +2,12 @@ baseURL = 'http://localhost:8090/'
 relativeURLs = true
 locale = 'es-CL'
 title = 'INBA - Internado Nacional Barros Arana'
+enableRobotsTXT = true
 
 [params]
   subtitle = "Internado Nacional Barros Arana"
+  description = "Sitio oficial del Internado Nacional Barros Arana (INBA): noticias, comunicados, documentos, historia, comunidad educativa y actividades institucionales."
+  keywords = ["INBA", "Internado Nacional Barros Arana", "educación pública", "noticias", "comunicados", "galerías", "Santiago"]
   phone = "+56 9 3456 8978"
   email = "info@inba.cl"
   address = "Santo Domingo 3535, Santiago"
@@ -125,3 +128,8 @@ title = 'INBA - Internado Nacional Barros Arana'
     name = "Comunicados"
     url = "/comunicados/"
     weight = 7
+
+    [[menus.main]]
+      name = "Galerías"
+      url = "/galerias/"
+      weight = 8

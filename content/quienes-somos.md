@@ -33,4 +33,4 @@ El presidente Pedro Montt rebautizó el establecimiento el 13 de noviembre de 19
 
 El colegio albergó entre las décadas de 1920 y 1985 cerca de mil internos anualmente, con un 10% de alumnado extranjero o hijos de inmigrantes. En 1997 se convirtió en el único liceo de la Municipalidad de Santiago en ganar el Proyecto Montegrande, y el 1 de enero de 2006 obtuvo el reconocimiento de excelencia académica.
 
-*(Prueba de migración: contenido curado a partir de la página actual del sitio; la historia completa y las imágenes institucionales se completarán en la migración final.)*
+Con más de un siglo de historia, el INBA continúa siendo un espacio de formación, memoria y comunidad, donde la educación pública, la tradición patrimonial y la mirada hacia el futuro se fortalecen en cada generación.

@@ -1,0 +1,436 @@
+{
+  "content/noticias/debut-seleccion-futbol.md": [
+    {
+      "image": "images/noticias/debut-seleccion-futbol/IMG_1953-300x200.jpg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-04-10-at-18.10.43-1024x768.jpeg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/logo.png",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-04-10-at-18.09.56-1-768x1152.jpeg",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/PHOTO-2025-12-12-12-06-47-768x432.jpg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/INBA-Respirar-Juntos-4-1024x461-1-768x346.jpeg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/nuevo-baner-768x384.jpg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 9"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 10"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 11"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/revista-768x399.jpg",
+      "label": "Imagen 12"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 13"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/IMG_3404-768x512.jpg",
+      "label": "Imagen 14"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/comunicado_inba_max.jpg",
+      "label": "Imagen 15"
+    },
+    {
+      "image": "images/noticias/debut-seleccion-futbol/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 16"
+    }
+  ],
+  "content/noticias/noche-de-cine.md": [
+    {
+      "image": "images/noticias/noche-de-cine/IMG_1953-300x200.jpg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-04-10-at-18.09.56-1-768x1152.jpeg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/logo.png",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/PHOTO-2025-12-12-12-06-47-768x432.jpg",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/INBA-Respirar-Juntos-4-1024x461-1-768x346.jpeg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/nuevo-baner-768x384.jpg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 9"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 10"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/revista-768x399.jpg",
+      "label": "Imagen 11"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 12"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/IMG_3404-768x512.jpg",
+      "label": "Imagen 13"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/comunicado_inba_max.jpg",
+      "label": "Imagen 14"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 15"
+    },
+    {
+      "image": "images/noticias/noche-de-cine/WhatsApp-Image-2026-04-17-at-20.18.30-1024x682.jpeg",
+      "label": "Imagen 16"
+    }
+  ],
+  "content/noticias/dia-actividad-fisica.md": [
+    {
+      "image": "images/noticias/dia-actividad-fisica/IMG_1953-300x200.jpg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-04-10-at-18.09.56-1-768x1152.jpeg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/logo.png",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/PHOTO-2025-12-12-12-06-47-768x432.jpg",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/INBA-Respirar-Juntos-4-1024x461-1-768x346.jpeg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/nuevo-baner-768x384.jpg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 9"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 10"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/revista-768x399.jpg",
+      "label": "Imagen 11"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-04-17-at-20.49.30-1024x768.jpeg",
+      "label": "Imagen 12"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 13"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/IMG_3404-768x512.jpg",
+      "label": "Imagen 14"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/comunicado_inba_max.jpg",
+      "label": "Imagen 15"
+    },
+    {
+      "image": "images/noticias/dia-actividad-fisica/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 16"
+    }
+  ],
+  "content/noticias/nace-inba-comunica.md": [
+    {
+      "image": "images/noticias/nace-inba-comunica/IMG_1953-300x200.jpg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/Captura-de-pantalla-2026-04-27-122553.jpg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/logo.png",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/WhatsApp-Image-2026-04-10-at-18.09.56-1-768x1152.jpeg",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/PHOTO-2025-12-12-12-06-47-768x432.jpg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/INBA-Respirar-Juntos-4-1024x461-1-768x346.jpeg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/nuevo-baner-768x384.jpg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 9"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 10"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 11"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/revista-768x399.jpg",
+      "label": "Imagen 12"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 13"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/IMG_3404-768x512.jpg",
+      "label": "Imagen 14"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/comunicado_inba_max.jpg",
+      "label": "Imagen 15"
+    },
+    {
+      "image": "images/noticias/nace-inba-comunica/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 16"
+    }
+  ],
+  "content/noticias/recreo-musica-encadenados.md": [
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-05-19-at-15.32.35-1-1024x768.jpeg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/IMG_1953-300x200.jpg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-04-10-at-18.09.56-1-768x1152.jpeg",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/logo.png",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/PHOTO-2025-12-12-12-06-47-768x432.jpg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/INBA-Respirar-Juntos-4-1024x461-1-768x346.jpeg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/nuevo-baner-768x384.jpg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 9"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 10"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 11"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/revista-768x399.jpg",
+      "label": "Imagen 12"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 13"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/IMG_3404-768x512.jpg",
+      "label": "Imagen 14"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/comunicado_inba_max.jpg",
+      "label": "Imagen 15"
+    },
+    {
+      "image": "images/noticias/recreo-musica-encadenados/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 16"
+    }
+  ],
+  "content/noticias/charla-magistral-ciencias.md": [
+    {
+      "image": "images/noticias/charla-magistral-ciencias/IMG_1953-300x200.jpg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-04-10-at-18.09.56-1-768x1152.jpeg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/logo.png",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/PHOTO-2025-12-12-12-06-47-768x432.jpg",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/INBA-Respirar-Juntos-4-1024x461-1-768x346.jpeg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/nuevo-baner-768x384.jpg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 9"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-05-19-at-16.04.13-4.jpeg",
+      "label": "Imagen 10"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 11"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/revista-768x399.jpg",
+      "label": "Imagen 12"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 13"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/IMG_3404-768x512.jpg",
+      "label": "Imagen 14"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/comunicado_inba_max.jpg",
+      "label": "Imagen 15"
+    },
+    {
+      "image": "images/noticias/charla-magistral-ciencias/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 16"
+    }
+  ],
+  "content/noticias/campeones-balonmano/index.md": [
+    {
+      "image": "images/noticias/campeones-balonmano/IMG_1953-300x200.jpg",
+      "label": "Imagen 1"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/WhatsApp-Image-2026-05-19-at-16.04.13-4-300x150.jpeg",
+      "label": "Imagen 2"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/WhatsApp-Image-2026-07-14-at-15.30.06-200x300.jpeg",
+      "label": "Imagen 3"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/Captura-de-pantalla-2026-04-27-122553-300x268.jpg",
+      "label": "Imagen 4"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/WhatsApp-Image-2026-05-19-at-15.32.35-1-300x225.jpeg",
+      "label": "Imagen 5"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/WhatsApp-Image-2026-04-17-at-20.49.30-300x225.jpeg",
+      "label": "Imagen 6"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/comunicado_inba_max.jpg",
+      "label": "Imagen 7"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/Imagen-1-1-1024x637-1.jpg",
+      "label": "Imagen 8"
+    },
+    {
+      "image": "images/noticias/campeones-balonmano/WhatsApp-Image-2026-04-17-at-20.18.30-300x200.jpeg",
+      "label": "Imagen 9"
+    }
+  ]
+}

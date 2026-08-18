@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="container galerias-page">
+  <h1>{{ .Title }}</h1>
+  <div class="lead">{{ .Content }}</div>
+  <div class="archivo-galerias" aria-label="Galerías de actividades del INBA">
+    {{ range .Pages.ByTitle }}
+      {{ $matches := where hugo.Data.galleries.galleries "slug" .Params.gallery }}
+      {{ $gallery := index $matches 0 }}
+      {{ $files := readDir (printf "static/%s" $gallery.directory) }}
+      {{ if gt (len $files) 0 }}
+        <article class="archivo-galeria">
+          <h2>{{ .Title }}</h2>
+          <a class="archivo-galeria-enlace" href="{{ .RelPermalink }}">
+            <figure class="archivo-galeria-portada">
+              <img src="{{ printf "/%s/%s" $gallery.directory $gallery.cover | relURL }}" alt="{{ .Title }}" loading="lazy">
+            </figure>
+            <span>Ver galería</span>
+          </a>
+        </article>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

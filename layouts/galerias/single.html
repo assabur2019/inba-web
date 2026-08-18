@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container galerias-page">
+  <h1>{{ .Title }}</h1>
+  {{ $matches := where hugo.Data.galleries.galleries "slug" .Params.gallery }}
+  {{ $gallery := index $matches 0 }}
+  {{ $files := readDir (printf "static/%s" $gallery.directory) }}
+  <div class="galeria-detalle-imagenes" aria-label="{{ .Title }}">
+    {{ range $files }}
+      {{ if and (not (strings.HasSuffix .Name "-rotated.jpg")) (not (strings.HasSuffix .Name ".tmp")) }}
+      <figure class="archivo-galeria-imagen">
+        <img src="{{ printf "/%s/%s" $gallery.directory .Name | relURL }}" alt="{{ $.Title }}" loading="lazy">
+      </figure>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

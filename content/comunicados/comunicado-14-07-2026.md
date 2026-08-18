@@ -7,4 +7,4 @@ excerpt: "Comunicado oficial dirigido a la comunidad educativa del Internado Nac
 
 Comunicado oficial dirigido a la comunidad educativa del Internado Nacional Barros Arana.
 
-*(Contenido migrado como prueba desde el sitio actual; el comunicado completo se revisará en la migración final.)*
+El establecimiento informa a la comunidad educativa sobre las medidas, protocolos y decisiones que se mantienen vigentes en el marco de la convivencia escolar, la seguridad y el bienestar de la comunidad inbana. La institución agradece la responsabilidad, el respeto y la colaboración de estudiantes, familias y funcionarios en la continuidad de una vida escolar ordenada y democrática.

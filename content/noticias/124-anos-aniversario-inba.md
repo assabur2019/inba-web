@@ -1,10 +1,80 @@
 ---
 title: "🏛️ ¡124 años de historia y mística inbana! 🔴🟡"
 date: 2026-06-07
-image: "images/noticias/aniversario-inba.jpg"
-excerpt: "Hoy, 20 de mayo de 2026, celebramos el 124° Aniversario del primer internado estatal de Chile: el Internado Nacional Barros Arana (INBA)."
+image: "images/noticias/124-anos-aniversario-inba/IMG_1819.jpg"
+excerpt: "Hoy, 20 de mayo de 2026, celebramos el 124° aniversario del primer internado estatal de Chile: el Internado Nacional Barros Arana (INBA)."
+gallery_page: "/galerias/aniversario/"
+gallery:
+  - "images/noticias/124-anos-aniversario-inba/IMG_1819.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1821.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1825.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1827.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1830.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1840.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1848.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1848-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1886.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1911.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1913.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1916.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1918.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1921.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1928.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1929.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1929-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1936.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1937.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1945.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1953.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1960.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1962.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1966.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1969.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1973.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1978.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1983.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_1988.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2000.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2001.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2001-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2019.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2044.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2047.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2047-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2048.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2052.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2070.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2071.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2075.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2075-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2076.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2081.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2081-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2085.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2085-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2090.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2093.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2096.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2098.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2098-rotated.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2103.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2118.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2120.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2123.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2124.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2127.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2128.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2136.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2148.jpg"
+  - "images/noticias/124-anos-aniversario-inba/IMG_2149.jpg"
 ---
 
-Hoy, 20 de mayo de 2026, celebramos el 124° Aniversario del primer internado estatal de Chile: el Internado Nacional Barros Arana (INBA). Desde 1902, el imponente portal de la calle Santo Domingo ha sido el testigo de la transformación de miles de jóvenes que ingresaron con ilusiones y egresaron con vocación de servicio y compromiso con el país.
+Hoy, 20 de mayo de 2026, celebramos el 124° Aniversario del primer internado estatal de Chile: el Internado Nacional Barros Arana (INBA).
 
-*(Contenido migrado como prueba desde el sitio actual; el artículo completo con galería de fotos se migrará en una siguiente iteración.)*
+Desde 1902, el imponente portal de la calle Santo Domingo ha sido el testigo de la transformación de miles de jóvenes que ingresaron con ilusiones y egresaron comprometidos con el desarrollo de la patria, guiados por nuestro lema: “Mens sana in corpore sano” (Mente sana en cuerpo sano).
+
+Queremos que esta celebración sea de toda la hermandad. Te invitamos a visitar nuestro sitio oficial de aniversario, revivir los hitos que marcaron nuestra historia y dejar tu saludo o anécdota en el Libro de Firmas Virtual.
+
+¡Paso, paso, gallardas legiones! Dejanos en los comentarios: ¿De qué generación eres o cuál es tu mejor recuerdo del internado?
+
+#INBA124Años #InternadoNacional #BarrosArana #EducacionPublica #AniversarioINBA #ComunidadInbana

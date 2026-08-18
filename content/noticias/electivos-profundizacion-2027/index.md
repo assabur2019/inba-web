@@ -43,4 +43,4 @@ La elección de un electivo debe responder a los intereses, habilidades y proyec
 
 **¡Elige el camino que más te inspire y atrévete a profundizar en aquello que te apasiona!**
 
-*(Nota de la prueba de migración: el catálogo interactivo de electivos con filtros y buscador de la página original queda pendiente para una siguiente iteración.)*
+La elección de un electivo es una decisión personal y formativa que abre oportunidades para explorar, prepararse y construir un proyecto de vida con mayor claridad y sentido.

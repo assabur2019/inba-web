@@ -1,0 +1,15 @@
+# Sitio estático INBA en /2027/. Bloquea PHP y scripts de terceros (p. ej. akam60800.net).
+Options -Indexes -ExecCGI
+DirectoryIndex index.html
+
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|php8|phar|pl|cgi)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data:; media-src 'self'; connect-src 'self'; worker-src 'self' blob:; frame-src 'none'"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
