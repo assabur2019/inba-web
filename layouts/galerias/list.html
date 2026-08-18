@@ -12,7 +12,7 @@
           <h2>{{ .Title }}</h2>
           <a class="archivo-galeria-enlace" href="{{ .RelPermalink }}">
             <figure class="archivo-galeria-portada">
-              <img src="{{ printf "/%s/%s" $gallery.directory $gallery.cover | relURL }}" alt="{{ .Title }}" loading="lazy">
+              <img src="{{ printf "%s/%s" $gallery.directory $gallery.cover | relURL }}" alt="{{ .Title }}" loading="lazy">
             </figure>
             <span>Ver galería</span>
           </a>

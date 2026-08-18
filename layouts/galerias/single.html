@@ -8,7 +8,7 @@
     {{ range $files }}
       {{ if and (not (strings.HasSuffix .Name "-rotated.jpg")) (not (strings.HasSuffix .Name ".tmp")) }}
       <figure class="archivo-galeria-imagen">
-        <img src="{{ printf "/%s/%s" $gallery.directory .Name | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        <img src="{{ printf "%s/%s" $gallery.directory .Name | relURL }}" alt="{{ $.Title }}" loading="lazy">
       </figure>
       {{ end }}
     {{ end }}
