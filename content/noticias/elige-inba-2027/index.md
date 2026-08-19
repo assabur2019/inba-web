@@ -1,8 +1,9 @@
 ---
-title: "Elige INBA 2027: postula hasta el 27 de agosto en SAE"
+title: "Elije INBA"
 date: 2026-08-18
-image: "images/galerias/aniversario/IMG_1960.jpg"
+image: "images/noticias/elige-inba-2027/admin1.jpg"
 excerpt: "Tradición, deporte, talleres y grandes espacios. Mira los videos de la comunidad INBA y postula al internado en el Sistema de Admisión Escolar hasta el 27 de agosto."
+hero_quiet: true
 ---
 
 El **Internado Nacional Barros Arana** invita a las y los estudiantes de todo el país a conocer el liceo y a postular a través del **Sistema de Admisión Escolar (SAE)** hasta el **27 de agosto**.

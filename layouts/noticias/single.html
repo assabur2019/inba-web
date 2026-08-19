@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="wrap article-single">
   <p class="meta"><a href="{{ "/noticias/" | relURL }}">&larr; Noticias</a> · {{ .Date | time.Format ":date_long" }}</p>
-  <h1>{{ .Title }}</h1>
+  <h1{{ if .Params.hero_quiet }} class="article-title-quiet"{{ end }}>{{ .Title }}</h1>
   {{ if .Params.image }}
   <img class="article-hero" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="eager" decoding="async" fetchpriority="high" width="1200" height="800" sizes="(max-width: 768px) 100vw, 1200px">
   {{ end }}
