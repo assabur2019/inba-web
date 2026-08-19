@@ -3,7 +3,7 @@ title: "Comunicado a padres, madres y apoderados"
 date: 2026-06-10
 image: "images/comunicados/comunicado-10-06-2026.jpg"
 excerpt: "Comunicado dirigido a padres, madres y apoderados sobre acompañamiento familiar, uniforme, uso de celulares e interferiado del 17 de julio."
-popup: true
+popup: false
 ---
 
 Junto con saludar cordialmente, esperamos que se encuentren muy bien junto a sus familias. Diversos autores coinciden en que el acompañamiento de la familia es uno de los factores que más fortalece el aprendizaje y el desarrollo integral de los estudiantes. Su apoyo diario es clave para formar hábitos, responsabilidades y compromiso con la vida escolar.

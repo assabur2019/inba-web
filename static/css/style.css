@@ -416,9 +416,16 @@ body.popup-open { overflow: hidden; }
   border-top: 4px solid var(--inba-red);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
 }
+.popup-card-flyer {
+  max-width: 380px;
+  border-top: 0;
+  background: #0b1b3a;
+}
 .popup-image-link { display: block; }
 .popup-image { width: 100%; max-height: 55vh; object-fit: contain; background: var(--text); display: block; }
+.popup-card-flyer .popup-image { max-height: 78vh; background: #0b1b3a; }
 .popup-text { padding: 22px 26px 26px; }
+.popup-text-flyer { padding: 12px 16px 16px; text-align: center; }
 .popup-close {
   position: absolute;
   top: 10px;
