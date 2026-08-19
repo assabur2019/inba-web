@@ -44,7 +44,13 @@ document.addEventListener('DOMContentLoaded', function () {
   slides.forEach(function (slide) {
     slide.addEventListener('click', function (event) {
       if (event.target.closest('a, button')) return;
-      window.location.href = slide.getAttribute('data-news-url');
+      var url = slide.getAttribute('data-slide-url');
+      if (!url) return;
+      if (slide.getAttribute('data-slide-external') === 'true') {
+        window.open(url, '_blank', 'noopener');
+        return;
+      }
+      window.location.href = url;
     });
   });
 
