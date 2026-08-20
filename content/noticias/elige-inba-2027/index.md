@@ -47,6 +47,18 @@ Estos videos, difundidos por la comunidad INBA, muestran la vida diaria del inte
 </video>
 <figcaption>Ven y sé parte del INBA</figcaption>
 </figure>
+<figure>
+<video controls preload="metadata" playsinline>
+  <source src="video1.mp4" type="video/mp4">
+</video>
+<figcaption>Únete al INBA: grandes espacios recreativos</figcaption>
+</figure>
+<figure>
+<video controls preload="metadata" playsinline>
+  <source src="video2.mp4" type="video/mp4">
+</video>
+<figcaption>INBA 2027</figcaption>
+</figure>
 </div>
 
 **Elige INBA, elige deporte, elige tradición.** Hasta el 27 de agosto puedes escoger internado en SAE.
