@@ -3,7 +3,7 @@ title: "Anótate en la lista: matrícula segundo semestre 2026"
 date: 2026-08-18
 image: "images/comunicados/lista-espera-segundo-semestre.jpg"
 excerpt: "Si decidiste cambiarte al INBA este segundo semestre, anótate en la lista. Matrícula para estudiantes aceptados 2026, todos los jueves de 16:30 a 17:30 en Santo Domingo 3535."
-popup: true
+popup: false
 popup_flyer: true
 popup_cta: "Ir a SAE"
 popup_url: "https://www.sistemadeadmisionescolar.cl/"

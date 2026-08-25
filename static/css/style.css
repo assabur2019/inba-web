@@ -445,9 +445,26 @@ body.popup-open { overflow: hidden; }
   border-top: 0;
   background: #0b1b3a;
 }
+.popup-card-dual {
+  max-width: min(920px, 96vw);
+  background: #0a1a38;
+}
+.popup-images { display: block; }
+.popup-images-dual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px 10px 0;
+  align-items: start;
+}
 .popup-image-link { display: block; }
 .popup-image { width: 100%; max-height: 55vh; object-fit: contain; background: var(--text); display: block; }
 .popup-card-flyer .popup-image { max-height: 78vh; background: #0b1b3a; }
+.popup-card-dual .popup-image {
+  max-height: 72vh;
+  background: #0a1a38;
+  border-radius: 4px;
+}
 .popup-text { padding: 22px 26px 26px; }
 .popup-text-flyer { padding: 12px 16px 16px; text-align: center; }
 .popup-close {
@@ -522,4 +539,12 @@ body.popup-open { overflow: hidden; }
   .mu-badges { grid-template-columns: repeat(2, 1fr); }
   .doc-grid { grid-template-columns: 1fr; }
   .popup-text { padding: 20px 18px 22px; }
+  .popup-images-dual {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .popup-card-dual .popup-image { max-height: none; }
 }
+
