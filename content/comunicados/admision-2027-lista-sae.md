@@ -3,7 +3,7 @@ title: "Admisión 2027: pon al INBA en tu lista SAE"
 date: 2026-08-25
 image: "images/comunicados/admision-2027-25-08-1.jpeg"
 excerpt: "Tienes hasta este jueves 27 de agosto, primer período de postulación. Incluye al Internado Nacional Barros Arana en tu lista SAE."
-popup: true
+popup: false
 popup_flyer: true
 popup_images:
   - "images/comunicados/admision-2027-25-08-1.jpeg"
