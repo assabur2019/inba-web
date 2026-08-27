@@ -1,5 +1,5 @@
 ---
-title: "Elije INBA"
+title: "Elige INBA"
 date: 2026-08-18
 image: "images/noticias/elige-inba-2027/admin1.jpg"
 excerpt: "Tradición, deporte, talleres y grandes espacios. Mira los videos de la comunidad INBA y postula al internado en el Sistema de Admisión Escolar hasta el 27 de agosto."
