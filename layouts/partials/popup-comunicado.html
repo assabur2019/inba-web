@@ -1,10 +1,7 @@
 {{ $comunicados := where site.RegularPages "Section" "comunicados" }}
 {{ $comunicados = $comunicados.ByDate.Reverse }}
 {{ $destacados := where $comunicados "Params.popup" true }}
-{{ if $destacados }}
-  {{ $comunicados = $destacados }}
-{{ end }}
-{{ with first 1 $comunicados }}
+{{ with first 1 $destacados }}
 {{ range . }}
 {{ $pageTitle := .Title }}
 {{ $ctaHref := .Params.popup_url | default .RelPermalink }}
