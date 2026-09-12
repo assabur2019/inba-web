@@ -12,7 +12,13 @@
   {{ $seq := 0 }}
   {{ range $i, $noticia := $portada }}
   <article class="home-hero{{ if eq $seq 0 }} is-active{{ end }}{{ if $noticia.Params.hero_quiet }} home-hero-quiet{{ end }}" data-slide-url="{{ $noticia.RelPermalink }}" aria-hidden="{{ if eq $seq 0 }}false{{ else }}true{{ end }}">
-    {{ if $noticia.Params.image }}<img class="home-hero-image" src="{{ $noticia.Params.image | relURL }}" alt="{{ $noticia.Title }}" loading="{{ if eq $seq 0 }}eager{{ else }}lazy{{ end }}" decoding="async" fetchpriority="{{ if eq $seq 0 }}high{{ else }}auto{{ end }}" width="1600" height="900" sizes="100vw">{{ end }}
+    {{ if $noticia.Params.hero_video }}
+    <video class="home-hero-image home-hero-video" autoplay muted loop playsinline preload="metadata"{{ with $noticia.Params.image }} poster="{{ . | relURL }}"{{ end }} aria-label="{{ $noticia.Title }}">
+      <source src="{{ $noticia.Params.hero_video | relURL }}" type="video/mp4">
+    </video>
+    {{ else if $noticia.Params.image }}
+    <img class="home-hero-image" src="{{ $noticia.Params.image | relURL }}" alt="{{ $noticia.Title }}" loading="{{ if eq $seq 0 }}eager{{ else }}lazy{{ end }}" decoding="async" fetchpriority="{{ if eq $seq 0 }}high{{ else }}auto{{ end }}" width="1600" height="900" sizes="100vw">
+    {{ end }}
     <div class="home-hero-shade"></div>
     <div class="wrap home-hero-content">
       {{ if not $noticia.Params.hero_quiet }}

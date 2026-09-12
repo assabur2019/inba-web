@@ -203,6 +203,7 @@ a:hover { text-decoration: underline; }
 .home-hero a, .home-hero button { cursor: pointer; }
 .home-hero-image, .home-hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
 .home-hero-image { object-fit: cover; }
+.home-hero-video { object-fit: cover; pointer-events: none; }
 .home-hero-shade { background: linear-gradient(90deg, rgba(30, 13, 12, 0.84), rgba(30, 13, 12, 0.38)); }
 .home-hero-content { position: relative; width: 100%; padding-top: 86px; padding-bottom: 86px; }
 .home-eyebrow { margin: 0 0 12px; color: var(--inba-red); font-size: 0.72rem; font-weight: 700; letter-spacing: 1.25px; text-transform: uppercase; }

@@ -7,6 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var activeIndex = 0;
   var intervalId;
 
+  function syncVideos() {
+    slides.forEach(function (slide, slideIndex) {
+      var video = slide.querySelector('.home-hero-video');
+      if (!video) return;
+      if (slideIndex === activeIndex) {
+        var playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+          playPromise.catch(function () {});
+        }
+      } else {
+        video.pause();
+      }
+    });
+  }
+
   function showSlide(index) {
     activeIndex = (index + slides.length) % slides.length;
     slides.forEach(function (slide, slideIndex) {
@@ -19,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       dot.classList.toggle('is-active', isActive);
       dot.setAttribute('aria-selected', String(isActive));
     });
+    syncVideos();
   }
 
   function restartAutoplay() {
