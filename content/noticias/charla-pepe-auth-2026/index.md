@@ -26,4 +26,6 @@ Nos colgamos de sus palabras. Al igual que él, creemos profundamente en eso y e
 
 Recibir a un exalumno que ha recorrido caminos tan diversos —desde la universidad y la investigación social hasta la diplomacia y el Congreso— es también una invitación a nuestras nuevas generaciones: el INBA no solo forma estudiantes; forma ciudadanos con memoria, convicción y vocación pública.
 
+En esa misma línea de memoria y democracia, Pepe Auth publicó recientemente en Ex-Ante la columna [“Mi Once de septiembre”](https://www.ex-ante.cl/opinion/mi-once-de-septiembre-columna-pepe-auth/), un relato personal de aquel día de 1973 cuando terminaba 4° medio en el Internado. Es un texto que conecta directamente con el espíritu de su charla magistral en nuestra casa.
+
 **¡Esta siempre será tu casa, Pepe!**
