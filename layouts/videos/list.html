@@ -3,36 +3,55 @@
   <h1>{{ .Title }}</h1>
   <p>{{ .Description }}</p>
   <div class="home-videos-grid" style="margin-top: 32px;">
+    
+    {{/* YouTube videos from data */}}
     {{ range site.Data.home_videos.videos }}
-    <figure class="home-video-card">
-      <div class="home-video-frame">
-        {{ if eq .type "youtube" }}
-        <iframe
-          src="https://www.youtube.com/embed/{{ .id }}"
-          title="{{ .title }}"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen></iframe>
-        {{ else }}
-        <video controls preload="metadata" playsinline>
-          <source src="{{ .src | relURL }}" type="video/mp4">
-        </video>
-        {{ end }}
-      </div>
-      <figcaption>
-        <strong>{{ .title }}</strong>
-        {{ with .caption }}<small>{{ . }}</small>{{ end }}
-        {{ with .url }}
-          {{ if hasPrefix . "http" }}
-          <a href="{{ . }}" target="_blank" rel="noopener">Ver más <span aria-hidden="true">&rarr;</span></a>
-          {{ else }}
-          <a href="{{ . | relURL }}">Ver noticia <span aria-hidden="true">&rarr;</span></a>
+      {{ if eq .type "youtube" }}
+      <figure class="home-video-card">
+        <div class="home-video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/{{ .id }}"
+            title="{{ .title }}"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+        <figcaption>
+          <strong>{{ .title }}</strong>
+          {{ with .caption }}<small>{{ . }}</small>{{ end }}
+          {{ with .url }}
+            {{ if hasPrefix . "http" }}
+            <a href="{{ . }}" target="_blank" rel="noopener">Ver más <span aria-hidden="true">&rarr;</span></a>
+            {{ else }}
+            <a href="{{ . | relURL }}">Ver noticia <span aria-hidden="true">&rarr;</span></a>
+            {{ end }}
           {{ end }}
-        {{ end }}
-      </figcaption>
-    </figure>
+        </figcaption>
+      </figure>
+      {{ end }}
     {{ end }}
+
+    {{/* All local videos from news */}}
+    {{ $noticias := where site.RegularPages "Section" "noticias" }}
+    {{ range $noticias.ByDate.Reverse }}
+      {{ $page := . }}
+      {{ range .Resources.Match "*.mp4" }}
+      <figure class="home-video-card">
+        <div class="home-video-frame">
+          <video controls preload="metadata" playsinline>
+            <source src="{{ .RelPermalink }}" type="video/mp4">
+          </video>
+        </div>
+        <figcaption>
+          <strong>{{ $page.Title }}</strong>
+          <small>{{ .Name | replaceRE "\\.mp4$" "" | humanize | title }}</small>
+          <a href="{{ $page.RelPermalink }}">Ver noticia <span aria-hidden="true">&rarr;</span></a>
+        </figcaption>
+      </figure>
+      {{ end }}
+    {{ end }}
+
   </div>
 </section>
 {{ end }}
