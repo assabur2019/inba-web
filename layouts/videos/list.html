@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="wrap">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+  <div class="home-videos-grid" style="margin-top: 32px;">
+    {{ range site.Data.home_videos.videos }}
+    <figure class="home-video-card">
+      <div class="home-video-frame">
+        {{ if eq .type "youtube" }}
+        <iframe
+          src="https://www.youtube.com/embed/{{ .id }}"
+          title="{{ .title }}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        {{ else }}
+        <video controls preload="metadata" playsinline>
+          <source src="{{ .src | relURL }}" type="video/mp4">
+        </video>
+        {{ end }}
+      </div>
+      <figcaption>
+        <strong>{{ .title }}</strong>
+        {{ with .caption }}<small>{{ . }}</small>{{ end }}
+        {{ with .url }}
+          {{ if hasPrefix . "http" }}
+          <a href="{{ . }}" target="_blank" rel="noopener">Ver más <span aria-hidden="true">&rarr;</span></a>
+          {{ else }}
+          <a href="{{ . | relURL }}">Ver noticia <span aria-hidden="true">&rarr;</span></a>
+          {{ end }}
+        {{ end }}
+      </figcaption>
+    </figure>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -125,11 +125,14 @@ enableRobotsTXT = true
     url = "/noticias/"
     weight = 6
   [[menus.main]]
+    name = "Videos"
+    url = "/videos/"
+    weight = 7
+  [[menus.main]]
     name = "Comunicados"
     url = "/comunicados/"
-    weight = 7
-
-    [[menus.main]]
-      name = "Galerías"
-      url = "/galerias/"
-      weight = 8
+    weight = 8
+  [[menus.main]]
+    name = "Galerías"
+    url = "/galerias/"
+    weight = 9

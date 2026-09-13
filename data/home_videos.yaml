@@ -1,0 +1,16 @@
+videos:
+  - title: "Día de la Ciencia en el INBA 2026"
+    type: youtube
+    id: Cy0ZzDiImjU
+    caption: "CEA INBA · YouTube"
+    url: "https://www.youtube.com/watch?v=Cy0ZzDiImjU"
+  - title: "Elige INBA: Deporte y Tradición"
+    type: file
+    src: "noticias/elige-inba-2027/deporte-tradicion.mp4"
+    caption: "Formación integral y deportiva"
+    url: "/noticias/elige-inba-2027/"
+  - title: "Electivos de Profundización 2027"
+    type: file
+    src: "noticias/electivos-profundizacion-2027/video1.mp4"
+    caption: "Descubre tus opciones para el futuro"
+    url: "/noticias/electivos-profundizacion-2027/"
