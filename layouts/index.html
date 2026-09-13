@@ -72,11 +72,42 @@
   </div>
 </section>
 
-<section class="home-links">
-  <div class="wrap home-links-grid">
-    <a href="{{ "quienes-somos/" | relURL }}"><span>01</span><strong>Quiénes somos</strong><small>Historia, misión y visión institucional</small></a>
-    <a href="{{ "antecedentes/" | relURL }}"><span>02</span><strong>Documentos</strong><small>Información y antecedentes para la comunidad</small></a>
-    <a href="{{ "noticias/" | relURL }}"><span>03</span><strong>Noticias INBA</strong><small>Actividad académica y vida escolar</small></a>
+<section class="home-videos wrap" aria-label="Videos destacados">
+  <div class="home-section-heading">
+    <div><p class="home-eyebrow">En imágenes</p><h2>Videos INBA</h2></div>
+    <a class="inline-link" href="{{ "noticias/" | relURL }}">Ver noticias <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="home-videos-grid">
+    {{ range site.Data.home_videos.videos }}
+    <figure class="home-video-card">
+      <div class="home-video-frame">
+        {{ if eq .type "youtube" }}
+        <iframe
+          src="https://www.youtube.com/embed/{{ .id }}"
+          title="{{ .title }}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        {{ else }}
+        <video controls preload="metadata" playsinline>
+          <source src="{{ .src | relURL }}" type="video/mp4">
+        </video>
+        {{ end }}
+      </div>
+      <figcaption>
+        <strong>{{ .title }}</strong>
+        {{ with .caption }}<small>{{ . }}</small>{{ end }}
+        {{ with .url }}
+          {{ if hasPrefix . "http" }}
+          <a href="{{ . }}" target="_blank" rel="noopener">Ver más <span aria-hidden="true">&rarr;</span></a>
+          {{ else }}
+          <a href="{{ . | relURL }}">Ver noticia <span aria-hidden="true">&rarr;</span></a>
+          {{ end }}
+        {{ end }}
+      </figcaption>
+    </figure>
+    {{ end }}
   </div>
 </section>
 
