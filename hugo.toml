@@ -136,3 +136,15 @@ enableRobotsTXT = true
     name = "Galerías"
     url = "/galerias/"
     weight = 9
+  [[menus.main]]
+    name = "Intranet"
+    identifier = "intranet"
+    url = "#"
+    weight = 10
+  [[menus.main]]
+    name = "Buscar correos"
+    parent = "intranet"
+    url = "https://inba.cl/intranet/correo/login.php"
+    weight = 1
+    [menus.main.params]
+      target = "_blank"

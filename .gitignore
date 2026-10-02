@@ -5,6 +5,7 @@
 
 # Paquetes locales de deploy (no van al repo)
 .deploy-zips/
+/deploy/
 
 # Residuos de edición/transferencia
 *.tmp
