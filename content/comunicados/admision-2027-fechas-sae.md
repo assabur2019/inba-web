@@ -3,7 +3,7 @@ title: "Admisión 2027: guarda estas fechas SAE"
 date: 2026-09-12
 image: "images/comunicados/admision-2027-fechas-1.jpeg"
 excerpt: "¿Necesitas colegio para el 2027? Anota las fechas del proceso SAE: resultados, periodo complementario y matrícula. Elige INBA, internos y externos, 7° básico a 4° medio."
-popup: true
+popup: false
 popup_flyer: true
 popup_images:
   - "images/comunicados/admision-2027-fechas-1.jpeg"
