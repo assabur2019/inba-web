@@ -12,7 +12,13 @@
   {{ $seq := 0 }}
   {{ range $i, $noticia := $portada }}
   <article class="home-hero{{ if eq $seq 0 }} is-active{{ end }}{{ if $noticia.Params.hero_quiet }} home-hero-quiet{{ end }}" data-slide-url="{{ $noticia.RelPermalink }}" aria-hidden="{{ if eq $seq 0 }}false{{ else }}true{{ end }}">
-    {{ if $noticia.Params.hero_video }}
+    {{ if and $noticia.Params.hero_images (gt (len $noticia.Params.hero_images) 1) }}
+    <div class="home-hero-pair">
+      {{ range $noticia.Params.hero_images }}
+      <img class="home-hero-pair-image" src="{{ . | relURL }}" alt="{{ $noticia.Title }}" loading="{{ if eq $seq 0 }}eager{{ else }}lazy{{ end }}" decoding="async">
+      {{ end }}
+    </div>
+    {{ else if $noticia.Params.hero_video }}
     <video class="home-hero-image home-hero-video" autoplay muted loop playsinline preload="metadata"{{ with $noticia.Params.image }} poster="{{ . | relURL }}"{{ end }} aria-label="{{ $noticia.Title }}">
       <source src="{{ $noticia.Params.hero_video | relURL }}" type="video/mp4">
     </video>
