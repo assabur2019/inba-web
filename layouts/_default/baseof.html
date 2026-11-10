@@ -92,6 +92,9 @@
   {{ if .Params.monument_slider }}
   <script src="{{ "js/museo-slider.js" | relURL }}?v={{ now.Unix }}"></script>
   {{ end }}
+  {{ if or (eq .Layout "revistas") .Params.revistas }}
+  <script src="{{ "js/revista-viewer.js" | relURL }}?v={{ now.Unix }}"></script>
+  {{ end }}
   <script src="{{ "js/popup-config.js" | relURL }}"></script>
   <script src="{{ "js/popup-comunicado.js" | relURL }}?v={{ now.Unix }}"></script>
 </body>

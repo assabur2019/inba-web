@@ -3,7 +3,7 @@ title: "Admisión 2027: revisa tus resultados SAE"
 date: 2026-10-20
 image: "images/comunicados/admision-2027-resultados-1.jpeg"
 excerpt: "Si postulaste en el periodo principal, revisa tu resultado hasta el miércoles 21 de octubre a las 14:00. Puedes aceptar, activar la lista de espera o rechazar."
-popup: true
+popup: false
 popup_flyer: true
 popup_images:
   - "images/comunicados/admision-2027-resultados-1.jpeg"

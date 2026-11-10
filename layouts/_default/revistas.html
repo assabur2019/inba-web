@@ -1,0 +1,63 @@
+{{ define "main" }}
+<section class="qs-hero">
+  {{ if .Params.hero_image }}<img class="qs-hero-image" src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}">{{ end }}
+  <div class="qs-hero-shade"></div>
+  <div class="wrap qs-hero-content">
+    <p class="home-eyebrow">Divulgación científica</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+
+<article class="wrap article-single qs-body">
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if .Params.revistas }}
+{{ $first := index .Params.revistas 0 }}
+<section class="revista-shelf wrap" aria-label="Volúmenes de Ciencia INBA">
+  <div class="revista-grid" role="tablist" aria-label="Seleccionar volumen">
+    {{ range $i, $revista := .Params.revistas }}
+    <button
+      class="revista-card{{ if eq $i 0 }} is-active{{ end }}"
+      type="button"
+      role="tab"
+      id="tab-{{ $revista.id }}"
+      aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+      aria-controls="revista-viewer"
+      data-revista-id="{{ $revista.id }}"
+      data-revista-pdf="{{ $revista.pdf | relURL }}"
+      data-revista-title="{{ $revista.volume }} · {{ $revista.title }}">
+      <img src="{{ $revista.cover | relURL }}" alt="Portada {{ $revista.volume }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}" width="337" height="435">
+      <span class="revista-card-meta">
+        <strong>{{ $revista.volume }}</strong>
+        <small>{{ $revista.subtitle }}</small>
+        <em>{{ $revista.pages }} páginas</em>
+      </span>
+    </button>
+    {{ end }}
+  </div>
+
+  <div class="revista-viewer-panel" id="revista-viewer" role="tabpanel" aria-labelledby="tab-{{ $first.id }}">
+    <div class="revista-viewer-toolbar">
+      <div>
+        <p class="home-eyebrow">Lectura en línea</p>
+        <h2 id="revista-viewer-title">{{ $first.volume }} · {{ $first.title }}</h2>
+      </div>
+      <div class="revista-viewer-actions">
+        <a class="home-button" id="revista-open-link" href="{{ $first.pdf | relURL }}" target="_blank" rel="noopener">Abrir PDF <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="revista-viewer-frame">
+      <iframe
+        id="revista-iframe"
+        title="Visor de {{ $first.volume }}"
+        src="{{ $first.pdf | relURL }}#toolbar=1&navpanes=0&view=FitH"
+        loading="lazy"></iframe>
+    </div>
+    <p class="revista-viewer-note">Si el visor no carga en tu navegador o dispositivo, usa el botón <strong>Abrir PDF</strong>.</p>
+  </div>
+</section>
+{{ end }}
+{{ end }}
